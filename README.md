@@ -8,4 +8,4 @@ The detailed rationale behind the metagenome analysis steps is explained in "Met
 The authors consider themselves as microbial ecologists (not bioinformaticians) applying existing bioinformatic tools to analyze large amounts of DNA seqeuncing data. 
 Scripts published here are meant to provide transparency about the parameters used in the analyses. They use only existing software and are not intended to constitute a ready-to-go pipeline. The scripts include parameters specific to the Vienna Life Sciences Computing cluster such as use of locally available databases and SLURM work-load manager etc.
 
-The scripts in each folder are numbered. If to scripts have the same number, it means that these analyses do not depend on each others output and can be run simultaneously.
+The scripts in each folder are numbered. If two scripts have the same number, it means that these analyses do not depend on each other's output and can be run simultaneously.
