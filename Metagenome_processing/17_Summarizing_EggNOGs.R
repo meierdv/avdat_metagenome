@@ -33,7 +33,7 @@ colnames(EGGNOG_functions) <- c("EggNOG", "EggNOG_function")
 EGGNOG_functions <- na.omit(EGGNOG_functions, cols="EggNOG_function")
 
 #Counting EggNOGs per Bin and generating the matrix
-EGGNOGS_in_bin <- na.omit(cube(EGGNOGS, 
+EGGNOGS_in_bin <- na.omit(cube(data.table(EGGNOGS), 
                                lapply(.SD, length), 
                                by=c("Bin","EggNOG"), 
                                .SDcol=2), 
