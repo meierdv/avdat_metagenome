@@ -37,7 +37,7 @@ mkdir $DATA_FOLDER/Re_assembly/Binning/DAS_Tool
 
 #Perform the same binning procedure as has been applied to the whole assembly on the reassemblies
 
-for CLADE in (ls $DATA_FOLDER/Re_assembly/refs/*.fasta | xargs -n 1 basename | sed 's/\.fasta//g');
+for CLADE in $(ls $DATA_FOLDER/Re_assembly/refs/*.fasta | xargs -n 1 basename | sed 's/\.fasta//g');
 
 do
 
